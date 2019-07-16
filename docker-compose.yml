@@ -4,9 +4,9 @@ services:
   db:
     image: postgres
     environment:
-      - POSRTGRES_DB=base-datos
-      - POSRTGRES_USER=postgres
-      - POSRTGRES_PASSWORD=postgres
+      - POSTGRES_DB=base-datos
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
       - PGDATA=/var/lib/postgresql/data/pgdata
     volumes:
       - db_data:/var/lib/postgresql/data/pgdata
@@ -19,7 +19,7 @@ services:
     volumes:
       - ./app:/app
     command: >
-      sh -c "python3 manage.py runserver 0.0.0.0:8000"
+      sh -c "python manage.py runserver 0.0.0.0:8000"
     depends_on:
       - db
 

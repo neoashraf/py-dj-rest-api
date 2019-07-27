@@ -13,4 +13,4 @@ class HelloApiView (APIView):
             '1', '2'
         ]
         
-        return Response({'message':'Hello Dear', an_apiview': an_apiview})
+        return Response({'message':'Hello Dear', 'an_apiview': an_apiview})

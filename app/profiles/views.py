@@ -7,10 +7,10 @@ from rest_framework.response import Response
 class HelloApiView (APIView):
     """Test API view."""
     def get(self, request, format=None):
-        """REsturns a list of APIView features."""
+        """Returns a list of APIView features."""
         
         an_apiview = [
             '1', '2'
         ]
         
-        return Response({'an_apiview': an_apiview})
+        return Response({'message':'Hello Dear', an_apiview': an_apiview})

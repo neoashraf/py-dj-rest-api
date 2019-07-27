@@ -36,7 +36,7 @@ class UserProfileManager(BaseUserManager):
 # Create your models here.
 class UserProfile(AbstractBaseUser, PermissionsMixin):
     
-    """Represents a user profile in our system"""
+    """Represents a user profile in our system."""
     
     email = models.EmailField(max_length=255, unique=True)
     name  = models.CharField(max_length=255)

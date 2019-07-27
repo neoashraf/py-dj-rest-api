@@ -1,2 +1,2 @@
-# recipe-app-api
-Recipie app api source code
+# Django-Practice-App
+We eill be building a REST API with Python & Django

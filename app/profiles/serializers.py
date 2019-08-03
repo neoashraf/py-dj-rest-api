@@ -19,11 +19,11 @@ class UserProfileSerializer(serializers.ModelSerializer):
         """    """
         
         user = models.UserProfile(
-            email= validated_data['email'],
-            name= validated_data['name']
+            email= validate_data['email'],
+            name= validate_data['name']
         )
         
-        user.set_password(validated_data['password'])
+        user.set_password(validate_data['password'])
         user.save()
         
         return save

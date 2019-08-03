@@ -103,7 +103,7 @@ class HelloViewSet(viewsets.ViewSet):
         return Response({'http_method': 'DELETE'})
     
     
-class UserProfileViewSet(viewSets.ModelViewSet):
+class UserProfileViewSet(viewsets.ModelViewSet):
     """ Handles creating, updating profiles """
     
     serializer_class = serializers.UserProfileSerializer 

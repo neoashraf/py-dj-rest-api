@@ -123,7 +123,6 @@ class UserProfileViewSet(viewsets.ModelViewSet):
     filter_backends = (filters.SearchFilter,)
     search_fields = ('name', 'email')
     
-    
 class LoginViewSet(viewsets.ViewSet):
     """ Checks email and password and returns an auth token. """
     
@@ -137,3 +136,4 @@ class LoginViewSet(viewsets.ViewSet):
 # class UserLoginApiView(ObtainAuthToken):
 #     """Handle creating user authentication tokens"""
 #     renderer_classes = api_settings.DEFAULT_RENDERER_CLASSES
+    
